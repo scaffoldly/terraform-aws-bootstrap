@@ -2,6 +2,15 @@ variable "root_email" {
   type = string
 }
 
+variable "account_id" {
+  type = string
+}
+
+variable "region" {
+  type    = string
+  default = "us-east-1"
+}
+
 variable "github_token" {
   type = string
 }
@@ -10,14 +19,9 @@ variable "organization" {
   type = string
 }
 
-variable "aws_regions" {
-  type    = list(string)
-  default = ["us-east-1"]
-}
-
-variable "dns_provider" {
+variable "aws_region" {
   type    = string
-  default = "aws"
+  default = "us-east-1"
 }
 
 variable "serverless_api_subdomain" {
@@ -35,36 +39,3 @@ variable "stages" {
   )
 }
 
-# TODO: Env Vars
-variable "public_websites" {
-  type = map(
-    object({
-      template  = string
-      repo_name = optional(string)
-    })
-  )
-  // TODO: Decom procedure
-  default = {}
-}
-
-variable "auth_service" {
-  type    = bool
-  default = true // TODO: Decom procedure
-}
-
-# TODO: Env Vars
-variable "serverless_apis" {
-  type = map(
-    object({
-      template       = string
-      repo_name      = optional(string)
-      decommissioned = optional(bool)
-    })
-  )
-  default = {}
-}
-
-variable "shared_env_vars" {
-  type    = map(string)
-  default = {}
-}
