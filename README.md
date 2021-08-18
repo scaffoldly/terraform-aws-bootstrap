@@ -58,7 +58,11 @@ No resources.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_api_gateway_stages"></a> [api\_gateway\_stages](#output\_api\_gateway\_stages) | n/a |
+| <a name="output_region"></a> [region](#output\_region) | n/a |
+| <a name="output_role"></a> [role](#output\_role) | n/a |
 <!-- END_TF_DOCS -->
 
 # Contributing
