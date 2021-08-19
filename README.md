@@ -59,9 +59,9 @@ No resources.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_api_gateway_stages"></a> [api\_gateway\_stages](#output\_api\_gateway\_stages) | n/a |
-| <a name="output_region"></a> [region](#output\_region) | n/a |
-| <a name="output_role"></a> [role](#output\_role) | n/a |
+| <a name="output_api_gateway_stages"></a> [api\_gateway\_stages](#output\_api\_gateway\_stages) | Output of api\_gatway\_stages from scaffoldly/terraform-aws-api-gateway |
+| <a name="output_region"></a> [region](#output\_region) | Re-output of var.region |
+| <a name="output_role"></a> [role](#output\_role) | IAM role for the managed account |
 <!-- END_TF_DOCS -->
 
 # Contributing
