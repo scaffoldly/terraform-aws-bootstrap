@@ -27,6 +27,7 @@ See [scaffoldly/bootstrap-template](https://github.com/scaffoldly/bootstrap-temp
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0.0, < 1.1.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | 3.55.0 |
 
 ## Providers
 
@@ -37,7 +38,7 @@ No providers.
 | Name | Source | Version |
 |------|--------|---------|
 | <a name="module_aws_api_gateway"></a> [aws\_api\_gateway](#module\_aws\_api\_gateway) | scaffoldly/api-gateway/aws | 1.0.2 |
-| <a name="module_aws_logging"></a> [aws\_logging](#module\_aws\_logging) | scaffoldly/logging/aws | 1.0.1 |
+| <a name="module_aws_logging"></a> [aws\_logging](#module\_aws\_logging) | scaffoldly/logging/aws | 1.0.2 |
 
 ## Resources
 
