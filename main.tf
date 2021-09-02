@@ -8,7 +8,7 @@ module "aws_logging" {
 
 module "aws_api_gateway" {
   source  = "scaffoldly/api-gateway/aws"
-  version = "1.0.2"
+  version = "1.0.3"
 
   subdomain = var.serverless_api_subdomain
   stages    = var.stages
