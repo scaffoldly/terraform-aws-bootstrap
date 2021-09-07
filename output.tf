@@ -12,3 +12,8 @@ output "api_gateway_stages" {
   value       = module.aws_api_gateway.api_gateway_stages
   description = "Output of api_gatway_stages from scaffoldly/terraform-aws-api-gateway"
 }
+
+output "stages" {
+  value       = var.stages
+  description = "Re-output of var.stages"
+}
