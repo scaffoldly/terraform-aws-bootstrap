@@ -62,6 +62,7 @@ No resources.
 | <a name="output_api_gateway_stages"></a> [api\_gateway\_stages](#output\_api\_gateway\_stages) | Output of api\_gatway\_stages from scaffoldly/terraform-aws-api-gateway |
 | <a name="output_region"></a> [region](#output\_region) | Re-output of var.region |
 | <a name="output_role"></a> [role](#output\_role) | IAM role for the managed account |
+| <a name="output_stages"></a> [stages](#output\_stages) | Re-output of var.stages |
 <!-- END_TF_DOCS -->
 
 # Contributing
