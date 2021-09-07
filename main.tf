@@ -6,6 +6,19 @@ module "aws_logging" {
   root_email   = var.root_email
 }
 
+module "kms" {
+  source  = "scaffoldly/kms/aws"
+  version = "1.0.0"
+
+  for_each = var.stages
+
+  stage = each.key
+
+  depends_on = [
+    module.aws_logging
+  ]
+}
+
 module "aws_api_gateway" {
   source  = "scaffoldly/api-gateway/aws"
   version = "1.0.3"
