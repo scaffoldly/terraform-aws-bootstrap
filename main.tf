@@ -1,6 +1,6 @@
 module "aws_logging" {
   source  = "scaffoldly/logging/aws"
-  version = "1.0.2"
+  version = "1.0.3"
 
   organization = var.organization
   root_email   = var.root_email
