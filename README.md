@@ -38,7 +38,7 @@ No providers.
 |------|--------|---------|
 | <a name="module_aws_api_gateway"></a> [aws\_api\_gateway](#module\_aws\_api\_gateway) | scaffoldly/api-gateway/aws | 1.0.5 |
 | <a name="module_aws_logging"></a> [aws\_logging](#module\_aws\_logging) | scaffoldly/logging/aws | 1.0.3 |
-| <a name="module_kms"></a> [kms](#module\_kms) | scaffoldly/kms/aws | 1.0.2 |
+| <a name="module_kms"></a> [kms](#module\_kms) | scaffoldly/kms/aws | 1.0.3 |
 
 ## Resources
 
