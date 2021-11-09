@@ -42,7 +42,7 @@ module "aws_cdn" {
   for_each = var.stages
 
   stage   = each.key
-  domains = each.value.cdn_domains != null ? each.value.cdn_domains : []
+  domains = each.value.cdn_domains ? each.value.cdn_domains : []
 
   providers = {
     aws.dns = aws.root
