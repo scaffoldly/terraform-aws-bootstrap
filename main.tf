@@ -35,7 +35,7 @@ module "aws_api_gateway" {
   ]
 }
 
-module "cdn_certificate" {
+module "aws_cdn" {
   source  = "scaffoldly/certificate/aws"
   version = "1.0.0"
 

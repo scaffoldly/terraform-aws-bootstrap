@@ -18,14 +18,15 @@ output "stages" {
   description = "Re-output of var.stages"
 }
 
-output "cdn_stage_certificates" {
+output "cdn_stages" {
   value = {
-    for certificate in module.cdn_certificate :
-    certificate.stage => {
-      certificate_arn = certificate.certificate_arn
+    for cdn in module.aws_cdn :
+    cdn.stage => {
+      certificate_arn = cdn.certificate_arn
+      domains         = cdn.domains
     }
   }
-  description = "A map of certificate ARNs, keyed by stage"
+  description = "A map of CDN stages, keyed by stage"
 }
 
 output "logs_bucket" {
