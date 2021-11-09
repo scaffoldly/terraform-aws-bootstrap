@@ -34,3 +34,17 @@ module "aws_api_gateway" {
     module.aws_logging
   ]
 }
+
+module "cdn_certificate" {
+  source  = "scaffoldly/certificate/aws"
+  version = "1.0.0"
+
+  for_each = var.stages
+
+  stage   = each.key
+  domains = each.value.cdn_domains != null ? each.value.cdn_domains : []
+
+  providers = {
+    aws.dns = aws.root
+  }
+}

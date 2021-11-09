@@ -17,3 +17,17 @@ output "stages" {
   value       = var.stages
   description = "Re-output of var.stages"
 }
+
+output "cdn_stage_certificates" {
+  value = {
+    for certificate in module.cdn_certificate :
+    certificate.stage => {
+      certificate_arn = certificate.certificate_arn
+    }
+  }
+  description = "A map of certificate ARNs, keyed by stage"
+}
+
+output "logs_bucket" {
+  value = module.aws_logging
+}

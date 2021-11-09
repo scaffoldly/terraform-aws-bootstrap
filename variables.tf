@@ -31,6 +31,7 @@ variable "stages" {
       domain           = string
       subdomain_suffix = optional(string)
       env_vars         = optional(map(string))
+      cdn_domains      = optional(list(string))
     })
   )
 }
