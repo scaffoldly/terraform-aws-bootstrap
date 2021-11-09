@@ -37,7 +37,7 @@ module "aws_api_gateway" {
 
 module "aws_cdn" {
   source  = "scaffoldly/certificate/aws"
-  version = "1.0.0"
+  version = "1.0.1"
 
   for_each = var.stages
 
