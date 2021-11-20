@@ -21,10 +21,11 @@ module "kms" {
 
 module "aws_api_gateway" {
   source  = "scaffoldly/api-gateway/aws"
-  version = "1.0.8"
+  version = "1.0.9"
 
-  subdomain = var.serverless_api_subdomain
-  stages    = var.stages
+  subdomain  = var.serverless_api_subdomain
+  websockets = var.serverless_api_websockets
+  stages     = var.stages
 
   providers = {
     aws.dns = aws.root

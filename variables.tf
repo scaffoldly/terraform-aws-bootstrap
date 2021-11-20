@@ -25,6 +25,11 @@ variable "serverless_api_subdomain" {
   default = "sly"
 }
 
+variable "serverless_api_websockets" {
+  type    = bool
+  default = false
+}
+
 variable "stages" {
   type = map(
     object({
