@@ -30,5 +30,5 @@ output "cdn_stages" {
 }
 
 output "logs_bucket" {
-  value = module.aws_logging
+  value = module.aws_logging.bucket_name
 }
