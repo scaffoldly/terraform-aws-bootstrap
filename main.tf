@@ -21,7 +21,7 @@ module "kms" {
 
 module "aws_api_gateway" {
   source  = "scaffoldly/api-gateway/aws"
-  version = "1.0.9"
+  version = "1.0.10"
 
   subdomain  = var.serverless_api_subdomain
   websockets = var.serverless_api_websockets
