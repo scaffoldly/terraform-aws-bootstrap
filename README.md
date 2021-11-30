@@ -37,7 +37,7 @@ No providers.
 | Name | Source | Version |
 |------|--------|---------|
 | <a name="module_aws_api_gateway"></a> [aws\_api\_gateway](#module\_aws\_api\_gateway) | scaffoldly/api-gateway/aws | 1.0.12 |
-| <a name="module_aws_cdn"></a> [aws\_cdn](#module\_aws\_cdn) | scaffoldly/certificate/aws | 1.0.4 |
+| <a name="module_aws_cdn"></a> [aws\_cdn](#module\_aws\_cdn) | scaffoldly/certificate/aws | 1.0.5 |
 | <a name="module_aws_logging"></a> [aws\_logging](#module\_aws\_logging) | scaffoldly/logging/aws | 1.0.5 |
 | <a name="module_kms"></a> [kms](#module\_kms) | scaffoldly/kms/aws | 1.0.3 |
 
@@ -56,7 +56,7 @@ No resources.
 | <a name="input_root_email"></a> [root\_email](#input\_root\_email) | n/a | `string` | n/a | yes |
 | <a name="input_serverless_api_subdomain"></a> [serverless\_api\_subdomain](#input\_serverless\_api\_subdomain) | n/a | `string` | `"sly"` | no |
 | <a name="input_serverless_api_websockets"></a> [serverless\_api\_websockets](#input\_serverless\_api\_websockets) | n/a | `bool` | `false` | no |
-| <a name="input_stages"></a> [stages](#input\_stages) | n/a | <pre>map(<br>    object({<br>      domain           = string<br>      subdomain_suffix = optional(string)<br>      env_vars         = optional(map(string))<br>      cdn_domains      = optional(list(string))<br>    })<br>  )</pre> | n/a | yes |
+| <a name="input_stages"></a> [stages](#input\_stages) | n/a | <pre>map(<br>    object({<br>      domain           = string<br>      subdomain_suffix = optional(string)<br>      env_vars         = optional(map(string))<br>      cdn_subdomains   = optional(list(string))<br>    })<br>  )</pre> | n/a | yes |
 
 ## Outputs
 
