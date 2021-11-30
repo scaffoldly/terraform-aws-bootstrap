@@ -45,7 +45,7 @@ module "aws_cdn" {
   stage            = each.key
   root_domain      = each.value.domain
   subdomains       = each.value.cdn_subdomains != null ? each.value.cdn_subdomains : []
-  subdomain_suffix = each.value.subdomain_suffix
+  subdomain_suffix = each.value.subdomain_suffix != null ? each.value.subdomain_suffix : ""
 
   providers = {
     aws.dns = aws.root
