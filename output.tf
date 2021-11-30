@@ -22,8 +22,9 @@ output "cdn_stages" {
   value = {
     for cdn in module.aws_cdn :
     cdn.stage => {
-      certificate_arn = cdn.certificate_arn
-      domains         = cdn.domains
+      certificate_arn  = cdn.certificate_arn
+      subdomain_suffix = cdn.subdomain_suffix
+      domains          = cdn.domains
     }
   }
   description = "A map of CDN stages, keyed by stage"
