@@ -23,6 +23,7 @@ output "cdn_stages" {
     for cdn in module.aws_cdn :
     cdn.stage => {
       certificate_arn  = cdn.certificate_arn
+      root_domain      = cdn.root_domain
       subdomain_suffix = cdn.subdomain_suffix
       domains          = cdn.domains
     }
