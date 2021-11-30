@@ -38,13 +38,14 @@ module "aws_api_gateway" {
 
 module "aws_cdn" {
   source  = "scaffoldly/certificate/aws"
-  version = "1.0.4"
+  version = "1.0.5"
 
   for_each = var.stages
 
-  stage       = each.key
-  root_domain = each.value.domain
-  domains     = each.value.cdn_domains == null ? [] : each.value.cdn_domains
+  stage            = each.key
+  root_domain      = each.value.domain
+  subdomains       = each.value.cdn_subdomains != null ? each.value.cdn_subdomains : []
+  subdomain_suffix = each.value.subdomain_suffix
 
   providers = {
     aws.dns = aws.root
