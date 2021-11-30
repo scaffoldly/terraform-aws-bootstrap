@@ -24,7 +24,7 @@ output "cdn_stages" {
     cdn.stage => {
       certificate_arn  = cdn.certificate_arn
       root_domain      = lookup(var.stages[cdn.stage], "domain", "unknown-domain")
-      subdomain_suffix = cdn.subdomain_suffix
+      subdomain_suffix = lookup(var.stages[cdn.stage], "subdomain_suffix", "")
       domains          = cdn.domains
     }
   }
