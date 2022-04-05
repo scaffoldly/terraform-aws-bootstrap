@@ -8,7 +8,7 @@ module "aws_logging" {
 
 module "kms" {
   source  = "scaffoldly/kms/aws"
-  version = "1.0.3"
+  version = "1.0.4"
 
   for_each = var.stages
 

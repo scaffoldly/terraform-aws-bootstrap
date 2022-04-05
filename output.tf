@@ -31,6 +31,17 @@ output "cdn_stages" {
   description = "A map of CDN stages, keyed by stage"
 }
 
+output "kms_stages" {
+  value = {
+    for kms in module.kms :
+    kms.stage => {
+      key_id    = kms.key_id
+      key_alias = kms.key_alias
+    }
+  }
+  description = "A map of KMS Keys, keyed by stage"
+}
+
 output "logs_bucket" {
   value = module.aws_logging.bucket_name
 }
