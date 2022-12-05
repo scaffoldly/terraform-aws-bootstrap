@@ -40,6 +40,7 @@ No providers.
 | <a name="module_aws_cdn"></a> [aws\_cdn](#module\_aws\_cdn) | scaffoldly/certificate/aws | 1.0.9 |
 | <a name="module_aws_logging"></a> [aws\_logging](#module\_aws\_logging) | scaffoldly/logging/aws | 1.0.5 |
 | <a name="module_kms"></a> [kms](#module\_kms) | scaffoldly/kms/aws | 1.0.4 |
+| <a name="module_saml_to"></a> [saml\_to](#module\_saml\_to) | saml-to/iam/aws | 1.0.4 |
 
 ## Resources
 
@@ -68,6 +69,7 @@ No resources.
 | <a name="output_logs_bucket"></a> [logs\_bucket](#output\_logs\_bucket) | n/a |
 | <a name="output_region"></a> [region](#output\_region) | Re-output of var.region |
 | <a name="output_role"></a> [role](#output\_role) | IAM role for the managed account |
+| <a name="output_saml_to_trust"></a> [saml\_to\_trust](#output\_saml\_to\_trust) | n/a |
 | <a name="output_stages"></a> [stages](#output\_stages) | Re-output of var.stages |
 <!-- END_TF_DOCS -->
 
