@@ -4,6 +4,16 @@ module "saml_to" {
   owner   = var.organization
 }
 
+resource "aws_iam_role" "administrator" {
+  name               = "${var.organization}-admin"
+  assume_role_policy = module.saml_to.trust_policy
+}
+
+resource "aws_iam_role_policy_attachment" "administrator" {
+  role       = aws_iam_role.role.name
+  policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
+}
+
 module "aws_logging" {
   source  = "scaffoldly/logging/aws"
   version = "1.0.5"
