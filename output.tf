@@ -8,6 +8,11 @@ output "role" {
   description = "IAM role for the managed account"
 }
 
+output "administrator_role" {
+  value       = aws_iam_role.administrator.arn
+  description = "Administrator Role for usage with SAML.to"
+}
+
 output "api_gateway_stages" {
   value       = module.aws_api_gateway.api_gateway_stages
   description = "Output of api_gatway_stages from scaffoldly/terraform-aws-api-gateway"
