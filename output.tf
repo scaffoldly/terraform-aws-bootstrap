@@ -45,3 +45,7 @@ output "kms_stages" {
 output "logs_bucket" {
   value = module.aws_logging.bucket_name
 }
+
+output "saml_to_trust" {
+  value = module.saml_to.trust
+}

@@ -1,3 +1,9 @@
+module "saml_to" {
+  source  = "saml-to/iam/aws"
+  version = "1.0.4"
+  owner   = var.organization
+}
+
 module "aws_logging" {
   source  = "scaffoldly/logging/aws"
   version = "1.0.5"
