@@ -30,7 +30,9 @@ See [scaffoldly/bootstrap-template](https://github.com/scaffoldly/bootstrap-temp
 
 ## Providers
 
-No providers.
+| Name | Version |
+|------|---------|
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 3.55.0 |
 
 ## Modules
 
@@ -44,7 +46,10 @@ No providers.
 
 ## Resources
 
-No resources.
+| Name | Type |
+|------|------|
+| [aws_iam_role.administrator](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role) | resource |
+| [aws_iam_role_policy_attachment.administrator](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy_attachment) | resource |
 
 ## Inputs
 
@@ -63,6 +68,7 @@ No resources.
 
 | Name | Description |
 |------|-------------|
+| <a name="output_administrator_role"></a> [administrator\_role](#output\_administrator\_role) | Administrator Role for usage with SAML.to |
 | <a name="output_api_gateway_stages"></a> [api\_gateway\_stages](#output\_api\_gateway\_stages) | Output of api\_gatway\_stages from scaffoldly/terraform-aws-api-gateway |
 | <a name="output_cdn_stages"></a> [cdn\_stages](#output\_cdn\_stages) | A map of CDN stages, keyed by stage |
 | <a name="output_kms_stages"></a> [kms\_stages](#output\_kms\_stages) | A map of KMS Keys, keyed by stage |
